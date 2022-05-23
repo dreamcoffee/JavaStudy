@@ -37,7 +37,6 @@ class BaseConverter{
             value = num % 2 + value;
             num = num / 2;
         }
-        value = num + value;
         System.out.println(value);
     }
 

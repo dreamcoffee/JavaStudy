@@ -33,7 +33,7 @@ class BaseConverter{
     public void convert(int num) {
         String value = "";
 
-        while (num != 1) {
+        while (num != 0) {
             value = num % 2 + value;
             num = num / 2;
         }

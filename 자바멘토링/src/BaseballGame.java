@@ -12,8 +12,12 @@ class BaseballGame {
         answer = new int[3];
         for(int i = 0; i<answer.length; i++){
             answer[i] = random.nextInt(9);
+            for(int j =0; j<i; j++){
+                if(answer[i] == answer[j])
+                    i--;
+            }
         }
-        System.out.println(answer[0]+" "+answer[1]+" "+answer[2]);
+        System.out.println("[테스트]"+answer[0]+" "+answer[1]+" "+answer[2]);
         play();
     }
 

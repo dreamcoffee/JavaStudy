@@ -32,7 +32,7 @@ class bear extends GameObject{
 
     @Override
     protected void move(){
-        System.out.print("왼쪽(a), 아래(s), 위(d), 오른쪽(f) >> ");
+        System.out.print("왼쪽(a), 아래(s), 위(d), 오른쪽(f) >>  ");
         input = sc.next();
         if(input.equals("a") && x>0) x-=distance;
         else if(input.equals("s") && y<9) y+=distance;
